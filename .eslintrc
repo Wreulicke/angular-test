@@ -1,0 +1,30 @@
+{
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node":true
+    },
+    "parserOptions":{
+      "sourceType":"module",
+      "ecmaFeatures": {
+        "classes": true
+      }
+    },
+    "plugins": [
+      "babel"
+    ],
+    "ecmaFeatures": {
+      "modules": true,
+      "classes": true
+    },
+    "rules": {
+      "quotes": ["error","single",{"avoidEscape": true, "allowTemplateLiterals": true}],
+      "no-var": "error",
+      "prefer-const":"error",
+      "prefer-spread":"error",
+      "prefer-template": "error"
+    }
+}
+
